@@ -31,8 +31,10 @@ pinMode(DHTPIN, INPUT);
 
 void loop(){
 
-  StaticJsonBuffer<1000> jsonBuffer;
+StaticJsonBuffer<1000> jsonBuffer;
 JsonObject& data = jsonBuffer.createObject();
+//StaticJsonDocument<1000> doc;
+//JsonObject data = doc.to<JsonObject>();
   
 float value = analogRead(A0);  
 float v = (float) value / 1024;
@@ -48,6 +50,8 @@ data["temp"] = t;
 data["h"] = h;
 
 data.printTo(nodemcu);
+//serializeJson(data, nodemcu);
+
 
 
 

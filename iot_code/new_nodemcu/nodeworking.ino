@@ -1,3 +1,5 @@
+#include <GDBStub.h>
+
 #include <SoftwareSerial.h>
 #include <ArduinoJson.h>
 
@@ -5,15 +7,15 @@
 #include <ESP8266WiFi.h>  
 #include <FirebaseESP8266.h>
 
-#define WIFI_SSID "JC"
-#define WIFI_PASSWORD "123456789jc"
+#define WIFI_SSID "#####"
+#define WIFI_PASSWORD "@@@@"
 
 // Insert Firebase project API Key
 
 // Insert RTDB URLefine the RTDB URL */
-#define HOST "testing64jc-default-rtdb.firebaseio.com" 
+#define HOST "krishi-6c36b-default-rtdb.firebaseio.com" 
 
-#define AUTH "3x5eQnl9aENH91ujiHeUb9Hj08gY0OljFql8ANlW" // secret key
+#define AUTH "fMP8GeZHDsggl4CeN6ZHbhKcKeltRSImMQJmpWT5" // secret key
 
 
 FirebaseData fbdo;
