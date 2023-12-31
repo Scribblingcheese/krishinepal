@@ -31,6 +31,7 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+    </head>
     
     <style>
 
@@ -322,21 +323,7 @@ border-radius: 18px;
 
 
  
- ul.loca li {
-    color: #fff;
-padding-bottom: 10px;
-display: flex;
-font-size: 15px;
-flex-wrap: wrap;
-}
- ul.loca li:last-child {
-    padding-right: 0;
-}
- ul.loca li a {
-   padding-right: 17px;
-color: #fff;
-margin-top: 2px;
-}
+
 
 
 
@@ -389,77 +376,67 @@ border-radius: 10px;
      text-align: left;
      bottom: auto;
 }
+body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #216423; /* Green background color */
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #logo {
+            width: 80px; /* Adjust the width as needed */
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+        }
+
+        nav a {
+            color: #ffffff; /* White text color */
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
     </style>
-</head>
+
 <!-- body -->
 
 <body >
   
     <!-- header -->
     <header>
-        <!-- header inner -->
-        <div class="header" id="top">
+     <img src="images/logo.jpeg" alt="Logo" id="logo">
+     <p class="nepal-cares"><span class="text-wrapper" style="font-size: 40px;">Krishi</span> <span class="span"
+         style="font-size:40px">Nepal</span></p>
+     <nav>
 
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <div >
-
-                            <!-- Logo section -->
-                            <div >
-                                <div class="logo">
-                                    <img src="images/logo.jpeg" alt="Logo" height="80px" width="80px">
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-
-
-                    <!-- Top Right corner -->
-                    <div >
-                        <div class="location_icon_bottum_tt">
-                            <ul>
-                                
-                                <li><img src="icon/email1.png" />&nbsp;krishinepal@gmail.com</li>
-
-                                <li><img src="icon/call1.png" />(+977)9851633624</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="row">
-                    <div class="col location_icon_bottum">
-                       <div >
-                            <div >
-                                <div >
-                                    <div >
-                                        <nav class="main-menu">
-                                            <ul >
-                                                <li > <a href="#top">Home</a> </li>
-                                                <li> <a href="#about">About</a> </li>
-                                                <li><a href="http://127.0.0.1:5000/crop_recommendation">Crop Recommendation</a></li>
-                                                <li><a href="http://127.0.0.1:5000/graph">Sensor's Dashboard</a></li>
-                                                <li><a href="http://127.0.0.1:5000/crop_graph">Crop Dashboard</a></li>
-                                                
-
-                                            </ul>
-                                        </nav>
-                                    </div>
-                                </div>
-
-                            </div>
-                            
-                       </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- end header inner -->
+         <a href="{{ url_for('home') }}">Home</a>
+         <a href="{{ url_for('about') }}">About</a>
+       
+         
+         <a href="#">Contact Us</a>
+         <a href="#">Sensor Dashboard</a>
+         <a href="#">Crop Recommendation </a>
+         <a href="#">Crop Dashboard </a>
+     </nav>
+ </header>
+  
     </header>
-    <!-- end header -->
+
+        
+      
 
 
     <section>
@@ -468,11 +445,7 @@ border-radius: 10px;
             <div>
                 <div>
                     <img  src="images/banner.jpg" alt="First slide">
-                    <div class="container">
-                        <div class="carousel-caption relative">
-                            <h1>Krishi Nepal</h1>
-                            <span>Crop Recommendation</span>
-
+                   
                             
                             <a class="buynow" href="#about">About us</a>
                         </div>
@@ -536,21 +509,7 @@ border-radius: 10px;
                         </div>
                     </div>
 
-                    <div class="col">
-                        <div class="address">
-                            <h3>Contact Us</h3>
-
-                            <ul class="loca">
-                                <li>
-                                    <a href="#"><img src="icon/loc.png" alt="#" /></a>Kathmandu
-                                    </li>
-                                <li>
-                                    <a href="#"><img src="icon/email.png" alt="#" /></a>krishinepal@gmail.com</li>
-                                <li>
-                                    <a href="#"><img src="icon/call.png" alt="#" /></a>+9779824552543</li>
-                            </ul>
-                        </div>
-                    </div>
+                   
                 </div>
             </div>
         </div>
